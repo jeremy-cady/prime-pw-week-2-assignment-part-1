@@ -106,4 +106,18 @@ console.log(mostPets);
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
+switch (mostPets) {
+  case pets > friendsPets:
+    mostPets = pets;
+    break;
+  case pets < friendsPets:
+    mostPets = friendsPets;
+    break;
+}
+console.log(mostPets);
+
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+
+mostPets = (pets > friendsPets) ? pets : friendsPets;
+console.log(mostPets);
